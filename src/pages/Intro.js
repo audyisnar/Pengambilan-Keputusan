@@ -1,37 +1,28 @@
-import { ReactComponent as Ilustrasi } from "../analytics.svg";
 import { Link } from "react-router-dom";
+import Cover from '../assets/cover.png';
 
-export default function Intro({ slide, setSlide }) {
+export default function Intro({ slide }) {
   if (slide !== 0) return null;
 
   return (
-    <div className="bg-image h-full p-8 text">
-      <div className="text-xs font-semibold">
-        <p>FAZA GHULAM AHMAD</p>
-        <p>2110191035</p>
-        <p>3 D4 IT B</p>
-      </div>
-      <div className="h-4/5 flex">
-        <div className="w-1/2 text-4xl self-center">
-          <p>PENGAMBILAN KEPUTUSAN</p>
-          <p className="font-bold">DALAM KONDISI</p>
-          <p>BERISIKO</p>
-          <div className="flex mt-4">
-            <Link to="/calculate">
-              <div className="btn-start w-32 text-center text-base rounded-md cursor-pointer py-2">Mulai</div>
-            </Link>
-            <div className="flex ml-6 self-center text-base font-semibold hover:underline cursor-pointer" onClick={() => setSlide(1)}>
-              <p>lihat tutorial</p>
-              <svg className="w-5 h-5 self-center ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+    <div className="">
+      <div className="imageCover">
+          <img src={Cover} alt="Cover" className="h-screen w-full"/> 
+          <div className="textCover text-sm font-semibold">
+            <p>Audy Istania Narita</p>
+            <p>2110191022</p>
+            <p>3 D4 IT A</p>
+          </div>
+          <div className="tittleCover flex flex-col justify-center items-center">
+            <p className="text-3xl text-white">PENGAMBILAN KEPUTUSAN</p>
+            <p className="text-4xl font-bold">DALAM KONDISI BERISIKO</p>
+            <div className="mt-10">
+              <Link to="/calculate">
+                <div className="btn-start w-32 text-center text-base rounded-md cursor-pointer py-2">Mulai</div>
+              </Link>
             </div>
           </div>
-        </div>
-        <div className="w-1/2 flex justify-center self-center">
-          <Ilustrasi />
-        </div>
-      </div>
+      </div>                
     </div>
   );
 }

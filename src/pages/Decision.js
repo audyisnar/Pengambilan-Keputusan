@@ -83,7 +83,7 @@ export default function Decision() {
   }, [data, beli, jual]);
 
   return (
-    <div className="p-8 pb-16 text">
+    <div className="background p-8 pb-16 h-screen text">
       <Link to="/">
         <div className="flex text-base font-semibold hover:underline cursor-pointer">
           <svg className="w-5 h-5 self-center mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +92,7 @@ export default function Decision() {
           <p>kembali ke beranda</p>
         </div>
       </Link>
-      <div className="flex font-bold mt-6">
+      <div className="flex font-bold mt-14">
         <p>harga beli:</p>
         <p className="font-normal ml-2 mr-1">Rp</p>
         <input
@@ -115,7 +115,7 @@ export default function Decision() {
       <div className="mt-6 text-left">
         <p className="font-bold">Data Permintaan dan Probabilitas</p>
         <table className="divide-y divide-gray-200 w-1/4 bg-white">
-          <thead className="bg-gray-300">
+          <thead className="bg-yellow-100">
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No.</th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Permintaan (Unit/Hari)</th>
@@ -188,7 +188,7 @@ export default function Decision() {
         </table>
         <p className="font-bold mt-6">Tabel Pay Off</p>
         <table className="divide-y divide-gray-200 w-3/4 bg-white">
-          <thead className="bg-gray-300">
+          <thead className="bg-yellow-100">
             <tr>
               <td
                 colSpan="1"
@@ -232,7 +232,7 @@ export default function Decision() {
         </table>
         <p className="font-bold mt-6">Tabel Pay Off Net Cash Flows</p>
         <table className="divide-y divide-gray-200 w-3/4 bg-white">
-          <thead className="bg-gray-300">
+          <thead className="bg-yellow-100">
             <tr>
               <td
                 colSpan="1"

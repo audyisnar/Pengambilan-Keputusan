@@ -28,13 +28,32 @@
   color: #61dafb;
 }
 
-.bg-image {
-  background-color: #F1F1F3;
-  height: 100vh; 
+.background {
+  background-color: #f7823e;
+}
+
+.imageCover{
+  position: relative;
+  z-index: 1;
+  top: 0px;
+}
+
+.tittleCover{
+  position: absolute;
+  top: 38%;
+  left: 54%;
+  z-index: 2;
+}
+
+.textCover{
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 2;
 }
 
 .text {
-  color: #445380;
+  color: #2b2bab;
 }
 
 .h-90{
@@ -42,11 +61,11 @@
 }
 
 .btn-start {
-  background-color: #31C9BE;
+  background-color: #3434d1;
   color: white;
 }
 .btn-start:hover {
-  background-color: #0B96B5;
+  background-color: #2b2bab;
 }
 
 .bg-biru {
