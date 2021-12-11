@@ -83,7 +83,7 @@ export default function Decision() {
   }, [data, beli, jual]);
 
   return (
-    <div className="background p-8 pb-16 h-screen text">
+    <div className="p-8 pb-16 h-full text">
       <Link to="/">
         <div className="flex text-base font-semibold hover:underline cursor-pointer">
           <svg className="w-5 h-5 self-center mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
